@@ -1,0 +1,21 @@
+{
+    "name": "webjump/module-doc",
+    "description": "Doc Magento Module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "email": "lucas.calazans@webjump.com.br",
+            "name": "Lucas Calazans"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webjump\\Doc\\": ""
+        }
+    }
+}

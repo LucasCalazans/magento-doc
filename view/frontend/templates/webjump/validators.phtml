@@ -1,0 +1,28 @@
+<form id="custom-form" action="<?php echo $block->getUrl('doc/validator') ?>" method="POST">
+    <fieldset class="fieldset">
+        <div class="field required">
+            <label for="custom-field" class="label">
+                <span>Custom Field</span>
+            </label>
+            <div class="control">
+                <input type="text" name="custom-field" id="custom-field" value="" title="Custom Field" class="input-text" data-validate="{ required:true, 'custom-validator': true }" aria-required="true">
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Send Information">
+                <span>Send Information</span>
+            </button>
+        </div>
+    </div>
+</form>
+
+<script type="text/x-magento-init">
+    {
+        "#custom-form": {
+            "validation": {},
+            "import-validators": {}
+        }
+    }
+</script>
